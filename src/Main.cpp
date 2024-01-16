@@ -1,13 +1,10 @@
 #include <spdlog/spdlog.h>
 #include "renderer/Engine.h"
-#include <windows.h>
-#include <chrono>
-
 
 int main()
 {
 #ifndef _WIN32
-    spdlog::critical("kys");
+    spdlog::critical("Only Windows is supported");
     return 1;
 #endif
     spdlog::info("Yay :D!");
